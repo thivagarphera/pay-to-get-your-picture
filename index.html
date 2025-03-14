@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            display: none; /* Initially hidden */
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Request to Pay</h2>
+        <p>Scan the QR Code below to complete your payment.</p>
+
+        <!-- QR Code Image (Replace the src with your QR Code URL) -->
+        <img src="your-qr-code-image-url.png" alt="QR Code" class="qr-code">
+
+        <p>Once you have completed the payment, click continue.</p>
+
+        <!-- Continue Button -->
+        <button id="continueBtn" onclick="window.location.href='https://site.fotoowl.ai/rentangle/gallery/94542';">Continue</button>
+    </div>
+
+    <script>
+        // Simulate payment confirmation (Replace this logic with actual verification)
+        setTimeout(function() {
+            document.getElementById("continueBtn").style.display = "block";
+        }, 5000); // Show button after 5 seconds (simulating payment verification)
+    </script>
+
+</body>
+</html>
